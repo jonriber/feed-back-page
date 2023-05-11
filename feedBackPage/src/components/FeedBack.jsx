@@ -24,7 +24,7 @@ const FeedBack = () => {
         <>
             <h3>Controlled Component</h3>
             <form onSubmit={handleSubmit}>
-                <fieldset style={{display:"flex",flexDirection:"column",borderRadius:"3px"}}>
+                <fieldset style={{display:"flex",flexDirection:"column",borderRadius:"5px",minHeight:"350px"}}>
                     <label>Name</label>
                     <input 
                         value={state.name}
@@ -50,14 +50,14 @@ const FeedBack = () => {
                     />
                     <label>Comments</label>
                     <textarea
-                        style={{minHeight:"100px"}}
+                        style={{minHeight:"150px"}}
                         value={state.comment}
                         onChange={handleChange}
                         id="comment"
                     />
                 </fieldset>
                 
-                <button type="submit">Submit</button>
+                <button type="submit" style={{margin:"10px"}}>Submit</button>
             </form>
         </>
     )
